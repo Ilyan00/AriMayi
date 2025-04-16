@@ -1,15 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import StyledWrapper from "./styled-wrapper";
+import CustomI18nextProvider from "./providers/I18nextProvider";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "antd/dist/reset.css";
+import ReduxProvider from "./redux-provider";
 
 export const metadata = {
   title: "Create Next App",
@@ -19,10 +12,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased w-screen h-screen flex">
+        <ReduxProvider>
+          <CustomI18nextProvider>
+            <StyledWrapper>{children}</StyledWrapper>
+          </CustomI18nextProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
