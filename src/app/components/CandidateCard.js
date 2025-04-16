@@ -11,7 +11,7 @@ const { Meta } = Card;
 export default function CandidateCard({ nom, prenom, email }) {
   return (
     <Card
-      style={{ width: 300 }}
+      className="w-full"
       actions={[
         <SettingOutlined key="setting" />,
         <EditOutlined key="edit" />,

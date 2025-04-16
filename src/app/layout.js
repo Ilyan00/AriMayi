@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased w-screen h-screen flex">
+      <body className="w-screen h-screen flex">
         <ReduxProvider>
           <CustomI18nextProvider>
             <StyledWrapper>{children}</StyledWrapper>
