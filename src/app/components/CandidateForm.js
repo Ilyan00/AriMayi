@@ -25,7 +25,6 @@ export default function CandidateForm() {
       message: values.message,
     };
     dispatch(setCandidates([newCandidate]));
-    console.log(newCandidate);
 
     setFirstname("");
     setLastname("");

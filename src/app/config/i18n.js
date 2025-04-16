@@ -8,6 +8,10 @@ const resources = {
       lastname: "Lastname",
       welcome: "Welcome",
       submit: "Submit",
+      contact: "Contact",
+      candidat: "Candidate number",
+      listInterest: "List of candidates interested in the offer",
+      about: "About",
     },
   },
   fr: {
@@ -16,6 +20,10 @@ const resources = {
       lastname: "Nom",
       welcome: "Bienvenue",
       submit: "Envoyer",
+      contact: "Prendre contact avec ",
+      candidat: "Candidat numéro",
+      listInterest: "Liste des candidats intéréssé par l'offre",
+      about: "À propos",
     },
   },
 };
