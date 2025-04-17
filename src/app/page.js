@@ -14,7 +14,7 @@ export default function Home() {
   }, []);
   return (
     <div className="md:px-32 md:my-10 m-5 w-full overflow-hidden">
-      <h1 className="text-white text-center md:text-start text-5xl md:text-7xl lg:text-9xl !font-black lg:!-mb-7 !-mx-5">
+      <h1 className="text-white text-center md:text-start text-5xl md:text-7xl lg:text-[10rem] !font-black lg:!-mb-14 !-mx-5">
         CONTACT
       </h1>
 
